@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulário de Pesquisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src=""></script>
+</head>
+<body>
+        
+        <div id="form-outer">
+            <h1 id="title">Formulário de Pesquisa</h1>
+          <p id="description">
+            Diga-nos o que você acha da filosofia.
+          </p>
+          <form id="survey-form" method="GET">
+            <div class="rowTab">
+              <div class="labels">
+                <label id="name-label" for="name">Nome: </label>
+              </div>
+              <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Insira seu nome aqui..." required>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="email-label" for="email"> Email: </label>
+              </div>
+              <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Insira seu email aqui...">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="number-label" for="age">Idade: </label>
+              </div>
+              <div class="rightTab">
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Idade">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="currentPos">Qual opção descreve melhor seu nível de conhecimento filosófico?</label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Selecione uma opção</option>
+              <option value="nenhum">Nenhum</option>
+                                <option value="pouco">Pouco/Básico</option>
+                                <option value="medio">Ensino Médio</option>
+                                <option value="superior">Nível Superior</option>
+            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="userRating">Qual probabilidade de um dia você cursar filosofia?</label>
+              </div>
+              <div class="rightTab">
+                <ul style= "list-style: none;">
+                                <li class="radio">
+                                    <label>Nenhuma<input name="radio-buttons" value="1" type="radio" class="userRatings"></label>
+                                </li>
+                                <li class="radio">
+                                    <label>Talvez<input name="radio-buttons" value="2" type="radio" class="userRatings"></label>
+                                </li>
+                                <li class="radio">
+                                    <label>Certeza<input name="radio-buttons" value="3" type="radio" class="userRatings"></label>
+                                </li>
+                            </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="most-like">O que na filosofia chama mais sua atenção?</label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="currentPos" class="dropdown">
+                                    <option disabled value>Selecione uma opção</option>
+                                    <option value="nada">Nada</option>
+                                    <option value="politica">Estudos sobre política</option>
+                                    <option value="arte">Estudos sobre a arte</option>
+                                    <option value="outros">Outros</option>
+                            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="preferences">Na sua opinião, a filosofia pode ajudar pessoas em:</label>
+              </div>
+              <div class="rightTab">
+                <ul id="preferences" style= "list-style: none;">
+                            <li class="checkbox">
+                                <label>Absolutamente nada<input name="prefer" value="1" type="checkbox" class="userRating"></label>
+                            </li>
+                            <li class="radio">
+                                <label>Formar opiniões críticas e autônomas<input name="prefer" value="2" type="checkbox" class="userRating"></label>
+                            </li>
+                            <li class="radio">
+                                <label>Compreender melhor o mundo<input name="prefer" value="3" type="checkbox" class="userRating"></label>
+                            </li>
+                        </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="comments">Deixe um comentário sobre o ensino de filosofia nas escolas:</label>
+              </div>
+              <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Comente aqui..."></textarea>
+              </div>
+            </div>
+            <button id="submit" type="submit">Enviar</button>
+          </form>
+        </div>
+</body>
+</html>
