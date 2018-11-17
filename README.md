@@ -7,6 +7,7 @@ Objetivo: criar um aplicativo CodePen.io que seja funcionalmente semelhante a es
 Cumpra as histórias de usuário abaixo e faça todos os testes para passar. Dê seu estilo pessoal.
 
 Você pode usar HTML, JavaScript e CSS para concluir este projeto. CSS simples é recomendado porque é isso que as lições cobriram até agora e você deve praticar com o CSS simples. Você pode usar o Bootstrap ou o SASS, se desejar. Tecnologias adicionais (por exemplo, jQuery, React, Angular ou Vue) não são recomendadas para este projeto, e usá-las é por sua conta e risco. Outros projetos lhe darão a chance de trabalhar com diferentes pilhas de tecnologia, como o React. Aceitaremos e tentaremos corrigir todos os relatórios de problemas que usam a pilha de tecnologia sugerida para este projeto. Codificação feliz!
+
 User Story # 1: posso ver um título com id="title"texto em tamanho H1.
 User Story # 2: Eu posso ver uma breve explicação com o id="description"texto em tamanho P.
 User Story # 3: Eu posso ver um formcom id="survey-form".
